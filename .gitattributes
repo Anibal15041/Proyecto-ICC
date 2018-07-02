@@ -16,16 +16,8 @@ def Menu():
     time.sleep(1)
     return
 def JugaR():
-    J1 = input("Escriba el nombre del jugador 1: ")
-    J2 = input("Escriba el nombre del jugador 2: ")
-    while J1 == J2:
-        print("Por favor ingrese un nickname diferente al otro.")
-        J2 = input("Ingrese el nombre del jugador 2: ")
-    palabra = input("Ingrese palabra a adivinar: ")
-    list=[]
-def JugaR():
-    J1 = input("Escriba el nombre del jugador 1: ")
-    J2 = input("Escriba el nombre del jugador 2: ")
+    J1 = input("Ingrese el nombre del jugador 1: ")
+    J2 = input("Ingrese el nombre del jugador 2: ")
     while J1 == J2:
         print("Por favor ingrese un nick diferente al otro.")
         J2 = input("Ingrese el nombre del jugador 2: ")
@@ -46,15 +38,15 @@ def JugaR():
         print("Suerte, que gane el mejor")
         while vidas>0:
             if vidas == 1:
-                print(vidas1,"solo te queda 1 vida")
+                print(vidas1,"te queda 1 vida")
             elif vidas == 2:
-                print(vidas2,"solo te queda 2 vidas")
+                print(vidas2,"te queda 2 vidas")
             elif vidas == 3:
-                print(vidas3,"solo te queda 3 vidas")
+                print(vidas3,"te queda 3 vidas")
             elif vidas == 4:
-                print(vidas4,"solo te queda 4 vidas")
+                print(vidas4,"te queda 4 vidas")
             elif vidas == 5:
-                print(vidas5,"solo te queda 5 vidas")
+                print(vidas5,"te queda 5 vidas")
             elif vidas == 6:
                 print(vidas6)
             if contador>0:
@@ -75,7 +67,7 @@ def JugaR():
         if vidas == 0:
             print("Usted ha perdido todas sus vidas, el ganador es", J2, ". Felicitaciones!")
         return
- def Salir():
+def Salir():
     if x=="0":
         print("Hasta la próxima, esperamos volver a jugar pronto.")
     return
@@ -92,7 +84,7 @@ if x=="2":
     print("0 - Salir del juego")
     x=input("Escoja una opción: ")
     while x!="0" and x!="1":
-        print("Opción fallida.")
+        print("Opción inválida.")
         x=input("Escoja una opción válida: ")
     Jugar()
     Salir()
